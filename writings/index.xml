@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Writings on Ivan Ayala</title>
+    <link>/writings/</link>
+    <description>Recent content in Writings on Ivan Ayala</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 26 Dec 2021 21:24:05 -0600</lastBuildDate><atom:link href="/writings/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Escritos</title>
+      <link>/writings/writings-index/</link>
+      <pubDate>Sun, 26 Dec 2021 21:24:05 -0600</pubDate>
+      
+      <guid>/writings/writings-index/</guid>
+      <description>Hola</description>
+      <content>&lt;p&gt;Hola&lt;/p&gt;
+</content>
+    </item>
+    
+  </channel>
+</rss>

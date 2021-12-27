@@ -2,13 +2,19 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>/writings/writings-index/</loc>
+    <lastmod>2021-12-26T21:24:05-06:00</lastmod>
+  </url><url>
+    <loc>/</loc>
+    <lastmod>2021-12-26T21:24:05-06:00</lastmod>
+  </url><url>
+    <loc>/writings/</loc>
+    <lastmod>2021-12-26T21:24:05-06:00</lastmod>
+  </url><url>
     <loc>/tags/about/</loc>
     <lastmod>2021-12-26T19:42:27-06:00</lastmod>
   </url><url>
     <loc>/posts/me/</loc>
-    <lastmod>2021-12-26T19:42:27-06:00</lastmod>
-  </url><url>
-    <loc>/</loc>
     <lastmod>2021-12-26T19:42:27-06:00</lastmod>
   </url><url>
     <loc>/tags/me/</loc>

@@ -6,7 +6,18 @@
     <description>Recent content on Ivan Ayala</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 26 Dec 2021 19:42:27 -0600</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 26 Dec 2021 21:24:05 -0600</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Escritos</title>
+      <link>/writings/writings-index/</link>
+      <pubDate>Sun, 26 Dec 2021 21:24:05 -0600</pubDate>
+      
+      <guid>/writings/writings-index/</guid>
+      <description>Hola</description>
+      <content>&lt;p&gt;Hola&lt;/p&gt;
+</content>
+    </item>
+    
     <item>
       <title>Hola, gusto en conocerte 🌐</title>
       <link>/posts/me/</link>
