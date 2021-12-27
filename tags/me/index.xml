@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Ivan Ayala</title>
-    <link>/</link>
-    <description>Recent content on Ivan Ayala</description>
+    <title>me on Ivan Ayala</title>
+    <link>/tags/me/</link>
+    <description>Recent content in me on Ivan Ayala</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 26 Dec 2021 19:42:27 -0600</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 26 Dec 2021 19:42:27 -0600</lastBuildDate><atom:link href="/tags/me/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Hola, gusto en conocerte</title>
       <link>/posts/me/</link>
@@ -22,18 +22,6 @@
 &lt;br&gt;
 &lt;br&gt;
 Mi nombre es Iván Ayala, son un desarrollador de software de México&lt;/p&gt;
-</content>
-    </item>
-    
-    <item>
-      <title>About</title>
-      <link>/about/</link>
-      <pubDate>Sun, 26 Dec 2021 18:33:52 -0600</pubDate>
-      
-      <guid>/about/</guid>
-      <description>Bienvenido este es mi sitio personal Hola mi nombre es Ivan Ayala</description>
-      <content>&lt;h1 id=&#34;bienvenido-este-es-mi-sitio-personal&#34;&gt;Bienvenido este es mi sitio personal&lt;/h1&gt;
-&lt;p&gt;Hola mi nombre es Ivan Ayala&lt;/p&gt;
 </content>
     </item>
     
