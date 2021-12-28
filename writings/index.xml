@@ -6,15 +6,117 @@
     <description>Recent content in Writings on Ivan Ayala</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 26 Dec 2021 21:24:05 -0600</lastBuildDate><atom:link href="/writings/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 27 Dec 2021 20:02:54 -0600</lastBuildDate><atom:link href="/writings/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Numeros flotantes</title>
+      <link>/writings/floating-numbers/</link>
+      <pubDate>Mon, 27 Dec 2021 20:02:54 -0600</pubDate>
+      
+      <guid>/writings/floating-numbers/</guid>
+      <description>Como muy seguramente se sabe, las computadoras atomicamente operan con nada mas que numeros, por ello los lenguajes de programacion nos brindan un conjunto de tipos de dato los cuales son de distintos tamaños y se encuentran dentro de un rango de posibles valores, como en el caso de algunos que soporta C++ podrian ser:
+   Tipo Tamaño Rango de valores     boolean 1 byte enteros de 0 a 1   char (o byte) con signo 1 byte enteros de -128 a 127   char (o byte) sin signo 1 byte enteros de 0 a 255   short con signo 2 byte enteros de -32,768 a 32,767   short sin signo 2 byte enteros de 0 a 65,535   long con signo 4 byte enteros de -2,147,483,648 a 2,147,483,647   long sin signo 4 byte enteros de 0 a 4,294,967,295    Apesar de que los rangos mostrados anteriormente pueden llegar a ser muy grandes, hay veces en las que al desarrollar nuestros programas necesitamos de un poco mas de precision, como es el caso de los programas encargados de procesar datos geometricos (posiciones en el espacio, por ejemplo) para producir graficos por computadora, para estos datos se suelen usar un tipo de numeros reales denominados flotantes, los cuales son un poco mas complicados en su compocision, siendo asi mas interesantes tambien 😉</description>
+      <content>&lt;p&gt;Como muy seguramente se sabe, las computadoras atomicamente operan con nada mas que numeros, por ello los lenguajes de programacion nos brindan un conjunto de &lt;em&gt;tipos de dato&lt;/em&gt; los cuales son de distintos tamaños y se encuentran dentro de un rango de posibles valores, como en el caso de algunos que soporta C++ podrian ser:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Tipo&lt;/th&gt;
+&lt;th&gt;Tamaño&lt;/th&gt;
+&lt;th&gt;Rango de valores&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;boolean&lt;/td&gt;
+&lt;td&gt;1 byte&lt;/td&gt;
+&lt;td&gt;enteros de 0 a 1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;char (o byte) con signo&lt;/td&gt;
+&lt;td&gt;1 byte&lt;/td&gt;
+&lt;td&gt;enteros de -128 a 127&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;char (o byte) sin signo&lt;/td&gt;
+&lt;td&gt;1 byte&lt;/td&gt;
+&lt;td&gt;enteros de 0 a 255&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;short con signo&lt;/td&gt;
+&lt;td&gt;2 byte&lt;/td&gt;
+&lt;td&gt;enteros de -32,768 a 32,767&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;short sin signo&lt;/td&gt;
+&lt;td&gt;2 byte&lt;/td&gt;
+&lt;td&gt;enteros de 0 a 65,535&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;long con signo&lt;/td&gt;
+&lt;td&gt;4 byte&lt;/td&gt;
+&lt;td&gt;enteros de -2,147,483,648 a 2,147,483,647&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;long sin signo&lt;/td&gt;
+&lt;td&gt;4 byte&lt;/td&gt;
+&lt;td&gt;enteros de 0 a 4,294,967,295&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;Apesar de que los rangos mostrados anteriormente pueden llegar a ser muy grandes, hay veces en las que al desarrollar nuestros programas necesitamos de un poco mas de &lt;em&gt;precision&lt;/em&gt;, como es el caso de los programas encargados de procesar datos geometricos (posiciones en el espacio, por ejemplo) para producir graficos por computadora, para estos datos se suelen usar un tipo de numeros reales denominados &lt;em&gt;flotantes&lt;/em&gt;, los cuales son un poco mas complicados en su compocision, siendo asi mas interesantes tambien 😉&lt;/p&gt;
+&lt;p&gt;En cuestion de tamaño un dato flotante consta de 4 bytes (o 32 bits), lo que significa que podriamos tener como maximo 2³² diferentes posibles valores.&lt;/p&gt;
+&lt;p&gt;Aunque esto hace que nos planteemos la pregunta, ¿Como podriamos usar 2³² posibles valores para abarcar tantos numeros reales posibles? Y como entre el 0 y el 1 hay un infinito de numeros, debemos tener en mente poder usar numeros muy pequeños, asi como numeros muy grandes.&lt;/p&gt;
+&lt;p&gt;La respuesta puede ser expresada con la siguiente ecuacion:&lt;/p&gt;
+
+  &lt;img src=&#34;https://latex.codecogs.com/svg.image?%5cbg_white&amp;amp;space;V&amp;amp;space;=&amp;amp;space;%28-1%29%5e%7bsign%7d&amp;amp;space;*&amp;amp;space;mantissa&amp;amp;space;*&amp;amp;space;2%5e%7bexponent%7d&#34;  class=&#34;center&#34;  style=&#34;filter: brightness(0) invert(1); width: 60%&#34;  /&gt;
+
+
+&lt;p&gt;Donde los 32 bits estan sub-divididos en 3 partes, un bit de signo, 8 bits para un numero &lt;em&gt;exponente&lt;/em&gt; y 23 bits para un numero &lt;em&gt;mantissa&lt;/em&gt;:&lt;/p&gt;
+
+  &lt;img src=&#34;../diagram.png&#34;  class=&#34;center&#34;  /&gt;
+
+
+</content>
+    </item>
+    
     <item>
       <title>Escritos</title>
       <link>/writings/writings-index/</link>
       <pubDate>Sun, 26 Dec 2021 21:24:05 -0600</pubDate>
       
       <guid>/writings/writings-index/</guid>
-      <description>Hola</description>
-      <content>&lt;p&gt;Hola&lt;/p&gt;
+      <description>Este es una especie de hub para todos los documentos que he hecho.
+ Articulos de computacion en general   ¿Como funcionan los numeros flotantes?   Articulos relacionados a programacion   Patron de diseño MVC.   Articulos relacionados a C++   Una bienvenida a la metaprogramacion con templates.   Articulos relacionados a videojuegos   Las matematicas detras de los backgrounds de MOTHER.   Articulos de consolas de videojuegos   Especificaciones tecnicas de la Nintendo Gamecube.</description>
+      <content>&lt;p&gt;Este es una especie de hub para todos los documentos que he hecho.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;h2 id=&#34;articulos-de-computacion-en-general&#34;&gt;Articulos de computacion en general&lt;/h2&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;../floating-numbers&#34;&gt;¿Como funcionan los numeros flotantes?&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;h2 id=&#34;articulos-relacionados-a-programacion&#34;&gt;Articulos relacionados a programacion&lt;/h2&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;Patron de diseño MVC.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;h2 id=&#34;articulos-relacionados-a-c&#34;&gt;Articulos relacionados a C++&lt;/h2&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;Una bienvenida a la metaprogramacion con templates.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;h2 id=&#34;articulos-relacionados-a-videojuegos&#34;&gt;Articulos relacionados a videojuegos&lt;/h2&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;Las matematicas detras de los backgrounds de MOTHER.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;h2 id=&#34;articulos-de-consolas-de-videojuegos&#34;&gt;Articulos de consolas de videojuegos&lt;/h2&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;Especificaciones tecnicas de la Nintendo Gamecube.&lt;/li&gt;
+&lt;/ul&gt;
 </content>
     </item>
     
